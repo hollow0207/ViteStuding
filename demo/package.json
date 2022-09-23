@@ -44,6 +44,9 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-alpha-3050320220729001",
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3050320220729001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3050320220729001",
+    "@dcloudio/uni-ui": "^1.4.22",
+    "less": "^4.1.3",
+    "uview-ui": "^2.0.33",
     "vue": "^3.2.39",
     "vue-i18n": "^9.1.9",
     "vuex": "^4.0.2"
@@ -54,6 +57,9 @@
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3050320220729001",
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-3050320220729001",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3050320220729001",
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
     "typescript": "^4.8.3",
     "vite": "^2.9.14"
   }
