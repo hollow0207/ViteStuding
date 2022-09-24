@@ -30,7 +30,7 @@ import { onLoad } from '@dcloudio/uni-app';
                 </uni-forms-item>
             </view>
             <!-- 输入 -->
-            <view class="create_input create_box">
+            <view class="create_box">
                 <uni-forms-item>
                     <image src="@/static/create_people.png"/>
                     <p>报名人数</p>
@@ -62,15 +62,41 @@ import { onLoad } from '@dcloudio/uni-app';
                     <uni-tag text="新标签"></uni-tag>
                 </view>
             </view>
-            <!-- 富文本 -->
-            <uni-forms-item>
-            
-            </uni-forms-item>
+            <!-- 多行文本 -->
+            <view class="create_box">
+                <uni-forms-item>
+                    <image src="@/static/create_text.png"/>
+                    <p>活动公告</p>
+                </uni-forms-item>
+                <uni-forms-item>
+                    <uni-easyinput
+                        type="textarea"
+                        placeholder="请输入本次活动的相关公告"
+                        autoHeight
+                    ></uni-easyinput>
+                </uni-forms-item>
+            </view>
             <!-- 设置按钮 -->
-            <uni-forms-item>
-
-            </uni-forms-item>
-            <!-- 按钮 -->
+            <view class="create_box">
+                <uni-forms-item>
+                    <image src="@/static/create_lock.png"/>
+                    <p>私密活动</p>
+                    <switch color="#6467F0" style="transform:scale(0.6);position: absolute;right: 0rpx;"></switch>
+                </uni-forms-item>
+                <uni-forms-item>
+                    <image src="@/static/create_stamp.png"/>
+                    <p>审批活动</p>
+                    <switch color="#6467F0" style="transform:scale(0.6);position: absolute;right: 0rpx;"></switch>
+                </uni-forms-item>
+            </view>
+            <!-- 按钮+模板 -->
+            <view class="create_submitBox">
+                <checkbox color="#6467F0">是否保存为模板</checkbox>
+                <view class="create_submitBox_btn">
+                    <button class="btn_loading">载入模板</button>
+                    <button class="btn_createAction">创建活动</button>
+                </view>
+            </view>
         </uni-forms>
     </view>
 </template>
@@ -98,6 +124,7 @@ import { onLoad } from '@dcloudio/uni-app';
             display:flex;
             align-items: center;
             width: 90%;
+            position: relative;
             // border-bottom: 1px solid #efefef;
         }
         /deep/ .uni-select{
@@ -146,5 +173,37 @@ import { onLoad } from '@dcloudio/uni-app';
             margin-right: 20rpx;
         }
     }
+    .create_submitBox{
+        /deep/ .uni-checkbox-wrapper{
+            font-size: 30rpx;
+            margin-bottom: 20rpx;
+        }
+        /deep/ .uni-checkbox-input{
+            border-radius: 50%;
+            opacity: 0.8;
+            border: 2rpx solid #6467F0;
+            margin-right: 20rpx;
+        }
+        .create_submitBox_btn{
+            display: flex;
+            .btn_loading{
+                width: 50%;
+                box-sizing: border-box;
+                margin-right: 10rpx;
+                font-weight: bolder;
+                color: #6467F0;
+                background-color: #D9DAFF;
+            }
+            .btn_createAction{
+                width: 50%;
+                box-sizing: border-box;
+                margin-left: 10rpx;
+                font-weight: bolder;
+                color: #fff;
+                background-color: #6467F0;
+            }
+        }
+    }
+    
 }
 </style>
