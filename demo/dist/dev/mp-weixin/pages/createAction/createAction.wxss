@@ -1,0 +1,95 @@
+.create.data-v-65892d9b {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(168.54% 168.54% at 50% 168.54%, #D9DAFF 0%, #FFFFFF 82.89%, #DDDEFD 100%);
+  box-sizing: border-box;
+  padding: 60rpx 10rpx;
+}
+.create .create_box.data-v-65892d9b {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin-bottom: 60rpx;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+}
+.create .create_box.data-v-65892d9b .uni-forms-item {
+  margin-bottom: 20rpx;
+}
+.create .create_box.data-v-65892d9b .uni-forms-item__content {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  position: relative;
+}
+.create .create_box.data-v-65892d9b .uni-select {
+  border: 0px;
+}
+.create .create_box.data-v-65892d9b .uni-stat-box {
+  display: flex;
+  align-items: center;
+  height: 40rpx;
+}
+.create .create_box.data-v-65892d9b .uni-select__input-box {
+  height: 60rpx;
+}
+.create .create_box image.data-v-65892d9b {
+  width: 40rpx;
+  height: 40rpx;
+}
+.create .create_box p.data-v-65892d9b {
+  font-size: 24rpx;
+  padding-left: 20rpx;
+  font-weight: bolder;
+}
+.create .create_box.data-v-65892d9b .uni-easyinput__content {
+  background-color: #D9DAFF;
+  border: 0px;
+}
+.create .create_box.data-v-65892d9b .uni-input-placeholder {
+  text-align: right;
+}
+.create .create_box.data-v-65892d9b .uni-input-input {
+  text-align: right;
+}
+.create .create_box .tagList.data-v-65892d9b {
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.create .create_box.data-v-65892d9b .uni-tag {
+  background-color: #efefef;
+  border: 0px;
+  color: #808080;
+  font-weight: bolder;
+  margin-right: 20rpx;
+}
+.create .create_submitBox.data-v-65892d9b .uni-checkbox-wrapper {
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.create .create_submitBox.data-v-65892d9b .uni-checkbox-input {
+  border-radius: 50%;
+  opacity: 0.8;
+  border: 2rpx solid #6467F0;
+  margin-right: 20rpx;
+}
+.create .create_submitBox .create_submitBox_btn.data-v-65892d9b {
+  display: flex;
+}
+.create .create_submitBox .create_submitBox_btn .btn_loading.data-v-65892d9b {
+  width: 50%;
+  box-sizing: border-box;
+  margin-right: 10rpx;
+  font-weight: bolder;
+  color: #6467F0;
+  background-color: #D9DAFF;
+}
+.create .create_submitBox .create_submitBox_btn .btn_createAction.data-v-65892d9b {
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: 10rpx;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #6467F0;
+}

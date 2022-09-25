@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "Wrecking Ball",
+  "navigationBarBackgroundColor": "#6467F0",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "search": "../../components/Search",
+    "tag": "../../components/Tag",
+    "selection": "../../components/Selection"
+  }
+}

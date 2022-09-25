@@ -33,8 +33,22 @@
 			"style": {
 				"navigationBarTitleText": "Wrecking Ball",
 				"navigationBarBackgroundColor":"#6467F0",
-				"navigationBarTextStyle":"#6467F0"
+				"navigationBarTextStyle":"black"
 			}
+		}
+	],
+	"subPackages":[
+		{
+			"root":"subpages",
+			"pages":[
+				{
+					"path":"detailed/detailed",
+					"style":{
+						"navigationBarBackgroundColor":"#fff",
+						"navigationBarTitleText":"比赛详情"
+					}
+				}
+			]
 		}
 	],
 	"globalStyle": {

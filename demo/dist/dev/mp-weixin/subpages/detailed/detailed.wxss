@@ -1,0 +1,62 @@
+.detailed.data-v-e03db806 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(168.54% 168.54% at 50% 168.54%, #D9DAFF 0%, #FFFFFF 82.89%, #DDDEFD 100%);
+  box-sizing: border-box;
+  padding: 40rpx 10rpx;
+}
+.detailed .detailed_table.data-v-e03db806 {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0rpx 4rpx 4rpx rgba(0, 0, 0, 0.25);
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  margin-bottom: 20rpx;
+}
+.detailed .detailed_table.data-v-e03db806 .is-direction-left {
+  margin-bottom: 20rpx;
+}
+.detailed .detailed_table.data-v-e03db806 .uni-forms-item__content {
+  display: flex;
+  align-items: center;
+}
+.detailed .detailed_table image.data-v-e03db806 {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.detailed .detailed_btn.data-v-e03db806 {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 10rpx;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+}
+.detailed .detailed_btn.data-v-e03db806 button::after {
+  border: 0rpx;
+}
+.detailed .detailed_btn .btn_join.data-v-e03db806 {
+  width: 50%;
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  font-weight: bolder;
+  border: 5rpx solid #6467F0;
+  color: #6467F0;
+  background-color: #D9DAFF;
+}
+.detailed .detailed_btn .btn_share.data-v-e03db806 {
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: bolder;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), #FE6700;
+  color: #ff6700;
+  border: 5rpx solid #ff6700;
+}
