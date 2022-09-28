@@ -1,9 +1,33 @@
-<script lang="ts" setup>
+<script lang="ts">
 import Search from '@/components/Search.vue';
 import Tag from '@/components/Tag.vue';
-import { ref } from 'vue';
+import { onLoad } from '@dcloudio/uni-app';
 import Selection from '../../components/Selection.vue';
+import {getUserEventList} from '../../api/home_api'
+import {ref, reactive, defineComponent} from 'vue'
 
+export default defineComponent({
+    name:'home',
+    components:{
+        Search,
+        Tag,
+        Selection,
+    },
+    setup(){
+        let obj:any = ref({})
+        onLoad(()=>{
+            getUserEventList().then((res:any)=>{
+                // obj.value = {...res.data.data}
+                obj.value = res.data.data
+            })
+            console.log(obj);
+        })
+
+        return {
+            obj
+        }
+    }
+})
 </script>
 <template>
     <view class="home">
@@ -14,7 +38,9 @@ import Selection from '../../components/Selection.vue';
         <view class="home_mine">
             <!-- 我的活动列表 -->
             <view class="home_mine_list">
-
+                <view v-for="(item,i) in obj" :key="i">
+                    {{item.id}}
+                </view>
             </view>
             <!-- 创建我的活动 -->
             <view class="home_mine_create">
@@ -32,7 +58,7 @@ import Selection from '../../components/Selection.vue';
 </template>
 <style lang="less" scoped>
 .home{
-    padding: 10rpx;
+    padding: 20rpx;
     .home_mine{
         width: 100%;
         height: 300rpx;

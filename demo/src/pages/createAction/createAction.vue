@@ -33,6 +33,14 @@ import { onLoad } from '@dcloudio/uni-app';
             <view class="create_box">
                 <uni-forms-item>
                     <image src="@/static/create_people.png"/>
+                    <p>活动名称</p>
+                    <uni-easyinput
+                        placeholder="请输入活动名称"                    
+                    >
+                    </uni-easyinput>
+                </uni-forms-item>
+                <uni-forms-item>
+                    <image src="@/static/create_people.png"/>
                     <p>报名人数</p>
                     <uni-easyinput
                         placeholder="请填写报名人数"                    
@@ -104,10 +112,9 @@ import { onLoad } from '@dcloudio/uni-app';
 <style lang="less" scoped>
 .create{
     width: 100%;
-    height: 100vh;
     background: radial-gradient(168.54% 168.54% at 50% 168.54%, #D9DAFF 0%, #FFFFFF 82.89%, #DDDEFD 100%);
     box-sizing: border-box;
-    padding: 60rpx 10rpx;
+    padding: 60rpx 20rpx;
     .create_box{
         width: 100%;
         // height: 300rpx;

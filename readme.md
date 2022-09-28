@@ -40,3 +40,8 @@ npm update uview-ui
 npm i node-sass -D
 npm i sass-loader -D
 ```
+
+
+
+获取用户信息：
+

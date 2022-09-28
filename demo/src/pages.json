@@ -32,7 +32,7 @@
 			"path": "pages/user/user",
 			"style": {
 				"navigationBarTitleText": "Wrecking Ball",
-				"navigationBarBackgroundColor":"#6467F0",
+				"navigationBarBackgroundColor":"#fff",
 				"navigationBarTextStyle":"black"
 			}
 		}

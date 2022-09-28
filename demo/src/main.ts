@@ -1,6 +1,8 @@
 import { createSSRApp } from "vue";
 import App from "./App.vue";
-// 引入uview
+import {mockRequest} from './mock/index'
+
+mockRequest();
 
 export function createApp() {
   const app = createSSRApp(App);

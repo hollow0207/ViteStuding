@@ -3,9 +3,9 @@ import { HEADER, HEADERPARAMS, TOKENNAME, HTTP_REQUEST_URL } from "./config"
 const request = function(
 	url:string,
 	method:any,
-	data:any,
-	auth:any,
-	params:unknown
+	data?:any,
+	auth?:any,
+	params?:unknown
 ){
 	if(auth == undefined){
 		auth = {
@@ -21,17 +21,17 @@ const request = function(
 		header = HEADERPARAMS
 	}
 	// 需要权限 但是没有token处理 - 转到登录页
-	if(auth.auth){
-		if(!token){
-			// 跳转登录页
-			uni.clearStorage();
-			return Promise.reject({
-				msg:'未登录'
-			})
-		}else{
-			header[TOKENNAME] = 'Bearer' + token
-		}
-	}
+	// if(auth.auth){
+	// 	if(!token){
+	// 		// 跳转登录页
+	// 		uni.clearStorage();
+	// 		return Promise.reject({
+	// 			msg:'未登录'
+	// 		})
+	// 	}else{
+	// 		header[TOKENNAME] = 'Bearer' + token
+	// 	}
+	// }
 
 	// 返回一个promise作为封装后的输出值
 	return new Promise((resolve, reject)=>{
@@ -53,9 +53,9 @@ const request = function(
 				resolve(res)
 				uni.hideLoading()
 				// 存入token
-				if(res.data.data.token && res.data.data.token != null){
-					uni.setStorageSync('token', res.data.data.token)
-				}
+				// if(res.data.data.token && res.data.data.token != null){
+				// 	uni.setStorageSync('token', res.data.data.token)
+				// }
 				if(!auth.auth){
 					resolve(res.data)
 				}else{
@@ -81,12 +81,12 @@ const request = function(
 							reject(res.data)
 							break;
 						default:
-							uni.showToast({
-								title:'系统错误',
-								duration:2000,
-								icon:'error'
-							});
-							reject(res.data.message || '系统错误')
+							// uni.showToast({
+							// 	title:'系统错误',
+							// 	duration:2000,
+							// 	icon:'error'
+							// });
+							// reject(res.data.message || '系统错误')
 							break;
 					}
 				}
