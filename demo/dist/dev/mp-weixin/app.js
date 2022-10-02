@@ -1,6 +1,9 @@
 "use strict";
 Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 var common_vendor = require("./common/vendor.js");
+var mock_index = require("./mock/index.js");
+require("./mock/home_mock.js");
+require("./mock/user.js");
 if (!Math) {
   "./pages/home/home.js";
   "./pages/index/index.js";
@@ -25,6 +28,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   }
 });
 var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/upc/Desktop/ViteStuding/demo/src/App.vue"]]);
+mock_index.mockRequest();
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   return {

@@ -5,6 +5,7 @@
   "usingComponents": {
     "search": "../../components/Search",
     "tag": "../../components/Tag",
-    "selection": "../../components/Selection"
+    "selection": "../../components/Selection",
+    "event": "../../components/Event"
   }
 }

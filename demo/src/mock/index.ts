@@ -6,9 +6,9 @@ import user from './user'
 const mocks = [...user, ...home]
 
 // 设置200-2000毫秒延时请求数据
-Mock.setup({
-  timeout: '200-2000'
-})
+// Mock.setup({
+//   timeout: '200-600'
+// })
 
 // 接口拦截
 export function mockRequest() {

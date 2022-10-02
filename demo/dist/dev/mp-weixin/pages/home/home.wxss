@@ -1,5 +1,5 @@
 .home.data-v-087d42bb {
-  padding: 10rpx;
+  padding: 20rpx;
 }
 .home .home_mine.data-v-087d42bb {
   width: 100%;
@@ -14,6 +14,13 @@
 .home .home_mine .home_mine_list.data-v-087d42bb {
   height: 100%;
   width: 70%;
+  box-sizing: border-box;
+  margin-right: 20rpx;
+}
+.home .home_mine .home_mine_list .home_mine_item.data-v-087d42bb {
+  height: 100rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
 }
 .home .home_mine .home_mine_create.data-v-087d42bb {
   height: 100%;
@@ -42,4 +49,10 @@
   color: rgba(209, 209, 251);
   margin: 0 auto;
   text-align: center;
+}
+.home .home_allEvent_list .home_allEvent_item.data-v-087d42bb {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150rpx;
+  margin-bottom: 20rpx;
 }

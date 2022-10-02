@@ -1,31 +1,6 @@
 const dataList = {
     userEventList:[
-        // {
-        //     id:'001',
-        //     time:'2022.9.14',
-        //     place:'',
-        //     type:'',
-        //     title:'',
-        //     limit:20,
-        //     charge:'',
-        //     tags:[
-
-        //     ],
-        //     description:'',
-        //     isSecret:false,
-        //     isAudit:true,
-        //     author:{
-
-        //     },
-        //     memberlist:[
-        //         {
-        //             wx_id:"",
-        //             name:'',
-        //             phone:'',
-        //             avatar:''
-        //         }
-        //     ]
-        // },
+        
         {
             id:'001',
             time:'2022.9.26',
@@ -62,6 +37,173 @@ const dataList = {
                 avatar:''
             }
         },
+    ],
+    allEventList:[
+        {
+            id:'001',
+            time:'2022.9.14',
+            place:'学校大操场',
+            type:'十一人制比赛',
+            title:'9.29训练赛',
+            limit:20,
+            charge:'无费用',
+            tags:[
+
+            ],
+            description:'这是一场正经比赛',
+            isSecret:false,
+            isAudit:true,
+            author:{
+                wx_id:"",
+                name:'',
+                phone:'',
+                avatar:''
+            },
+            memberlist:[
+                {
+                    wx_id:"",
+                    name:'',
+                    phone:'',
+                    avatar:''
+                }
+            ]
+        },
+        {
+            id:'002',
+            time:'2022.9.26',
+            place:'学校大操场',
+            type:'11人制',
+            title:'学院对抗赛',
+            limit:20,
+            charge:'不需要收费',
+            tags:[
+
+            ],
+            description:'计院打地院',
+            isSecret:false,
+            isAudit:true,
+            author:{
+
+            },
+            memberlist:[
+                {
+                    wx_id:"",
+                    name:'',
+                    phone:'',
+                    avatar:''
+                }
+            ]
+        },
+        {
+            id:'001',
+            time:'2022.9.14',
+            place:'学校大操场',
+            type:'十一人制比赛',
+            title:'9.29训练赛',
+            limit:20,
+            charge:'无费用',
+            tags:[
+
+            ],
+            description:'这是一场正经比赛',
+            isSecret:false,
+            isAudit:true,
+            author:{
+                wx_id:"",
+                name:'',
+                phone:'',
+                avatar:''
+            },
+            memberlist:[
+                {
+                    wx_id:"",
+                    name:'',
+                    phone:'',
+                    avatar:''
+                }
+            ]
+        },
+        {
+            id:'002',
+            time:'2022.9.26',
+            place:'学校大操场',
+            type:'11人制',
+            title:'学院对抗赛',
+            limit:20,
+            charge:'不需要收费',
+            tags:[
+
+            ],
+            description:'计院打地院',
+            isSecret:false,
+            isAudit:true,
+            author:{
+
+            },
+            memberlist:[
+                {
+                    wx_id:"",
+                    name:'',
+                    phone:'',
+                    avatar:''
+                }
+            ]
+        },
+        {
+            id:'001',
+            time:'2022.9.14',
+            place:'学校大操场',
+            type:'十一人制比赛',
+            title:'9.29训练赛',
+            limit:20,
+            charge:'无费用',
+            tags:[
+
+            ],
+            description:'这是一场正经比赛',
+            isSecret:false,
+            isAudit:true,
+            author:{
+                wx_id:"",
+                name:'',
+                phone:'',
+                avatar:''
+            },
+            memberlist:[
+                {
+                    wx_id:"",
+                    name:'',
+                    phone:'',
+                    avatar:''
+                }
+            ]
+        },
+        {
+            id:'002',
+            time:'2022.9.26',
+            place:'学校大操场',
+            type:'11人制',
+            title:'学院对抗赛',
+            limit:20,
+            charge:'不需要收费',
+            tags:[
+
+            ],
+            description:'计院打地院',
+            isSecret:false,
+            isAudit:true,
+            author:{
+
+            },
+            memberlist:[
+                {
+                    wx_id:"",
+                    name:'',
+                    phone:'',
+                    avatar:''
+                }
+            ]
+        },
     ]
 }
 
@@ -78,4 +220,16 @@ export default [
             }
         }
     },
+    // getAllEventList
+    {
+        url:'/mock/home/allEventList',
+        type:'get',
+        response:()=>{
+            return {
+                code:200,
+                message:"请求成功",
+                data:dataList.allEventList
+            }
+        }
+    }
 ]

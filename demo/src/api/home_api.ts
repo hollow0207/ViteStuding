@@ -5,9 +5,7 @@ export function getUserEventList():Promise<unknown>{
 
 }
 
-// export async function getUserEventList(){
-//     let result = await fun()
-//     console.log(result);
-//     return result
-// }
 
+export function getAllEventList():Promise<unknown>{
+    return request('/mock/home/allEventList', 'get')
+}

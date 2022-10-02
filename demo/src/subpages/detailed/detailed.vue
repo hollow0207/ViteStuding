@@ -1,6 +1,15 @@
 <script lang="ts" setup>
 import Tag from '../../components/Tag.vue';
 import MemberList from '../../components/MemberList.vue';
+import { onLoad } from '@dcloudio/uni-app';
+import { getCurrentInstance, onMounted, ref } from 'vue';
+
+let eventData = ref({})
+onLoad((options:any)=>{
+    eventData = JSON.parse(options.eventData)
+    console.log(eventData.id);
+      
+})
 
 </script>
 <template>

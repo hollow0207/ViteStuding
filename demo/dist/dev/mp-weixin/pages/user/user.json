@@ -1,6 +1,8 @@
 {
   "navigationBarTitleText": "Wrecking Ball",
-  "navigationBarBackgroundColor": "#6467F0",
+  "navigationBarBackgroundColor": "#fff",
   "navigationBarTextStyle": "black",
-  "usingComponents": {}
+  "usingComponents": {
+    "user-msg": "../../components/UserMsg"
+  }
 }

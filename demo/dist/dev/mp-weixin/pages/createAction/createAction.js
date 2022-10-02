@@ -36,31 +36,35 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         }),
         g: common_assets._imports_2,
         h: common_vendor.p({
+          placeholder: "\u8BF7\u8F93\u5165\u6D3B\u52A8\u540D\u79F0"
+        }),
+        i: common_assets._imports_2,
+        j: common_vendor.p({
           placeholder: "\u8BF7\u586B\u5199\u62A5\u540D\u4EBA\u6570"
         }),
-        i: common_assets._imports_4,
-        j: common_vendor.p({
+        k: common_assets._imports_4,
+        l: common_vendor.p({
           placeholder: "\u81EA\u5B9A\u4E49\u672C\u6B21\u6D3B\u52A8\u573A\u5730\u6536\u8D39"
         }),
-        k: common_assets._imports_3,
-        l: common_vendor.p({
+        m: common_assets._imports_3,
+        n: common_vendor.p({
           placeholder: "\u8BF7\u586B\u5199\u62A5\u540D\u4EBA\u6570",
           ["disabled:true"]: true
         }),
-        m: common_vendor.p({
+        o: common_vendor.p({
           text: "+"
         }),
-        n: common_vendor.p({
+        p: common_vendor.p({
           text: "\u65B0\u6807\u7B7E"
         }),
-        o: common_assets._imports_5,
-        p: common_vendor.p({
+        q: common_assets._imports_5,
+        r: common_vendor.p({
           type: "textarea",
           placeholder: "\u8BF7\u8F93\u5165\u672C\u6B21\u6D3B\u52A8\u7684\u76F8\u5173\u516C\u544A",
           autoHeight: true
         }),
-        q: common_assets._imports_6,
-        r: common_assets._imports_7
+        s: common_assets._imports_6,
+        t: common_assets._imports_7
       };
     };
   }

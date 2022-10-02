@@ -1,32 +1,25 @@
-<script lang="ts">
+<script lang="ts" setup>
 import Search from '@/components/Search.vue';
 import Tag from '@/components/Tag.vue';
 import { onLoad } from '@dcloudio/uni-app';
 import Selection from '../../components/Selection.vue';
-import {getUserEventList} from '../../api/home_api'
+import {getAllEventList, getUserEventList} from '../../api/home_api'
 import {ref, reactive, defineComponent} from 'vue'
+import Event from '../../components/Event.vue';
 
-export default defineComponent({
-    name:'home',
-    components:{
-        Search,
-        Tag,
-        Selection,
-    },
-    setup(){
-        let obj:any = ref({})
-        onLoad(()=>{
-            getUserEventList().then((res:any)=>{
-                // obj.value = {...res.data.data}
-                obj.value = res.data.data
-            })
-            console.log(obj);
-        })
+let userEventList:any = ref({})
+let allEventList:any = ref({})
+onLoad(()=>{
+    getUserEventList().then((res:any)=>{
+        userEventList.value = res.data.data
+    })
 
-        return {
-            obj
-        }
-    }
+    getAllEventList().then((res:any)=>{
+        allEventList.value = res.data.data
+    })
+    console.log(userEventList);
+    console.log(allEventList);
+    
 })
 </script>
 <template>
@@ -37,11 +30,19 @@ export default defineComponent({
         <Tag title="我的活动"></Tag>
         <view class="home_mine">
             <!-- 我的活动列表 -->
-            <view class="home_mine_list">
-                <view v-for="(item,i) in obj" :key="i">
-                    {{item.id}}
+            <scroll-view 
+                class="home_mine_list" 
+                scroll-y="true"   
+                show-scrollbar="false"             
+            >
+                <view class="home_mine_item" v-for="(item,i) in userEventList" :key="i">
+                    <Event
+                        :time="item.time"
+                        :title="item.title"
+                        :limit="item.limit"
+                    ></Event>
                 </view>
-            </view>
+            </scroll-view>
             <!-- 创建我的活动 -->
             <view class="home_mine_create">
                 <view class="home_mine_create_add">
@@ -54,6 +55,21 @@ export default defineComponent({
         </view>
         <!-- 筛选器 -->
         <Selection></Selection>
+        <scroll-view 
+            class="home_allEvent_list"
+            scroll-y="true"   
+            show-scrollbar="false"    
+        >
+            <view class="home_allEvent_item" v-for="(item,i) in allEventList" :key="i">
+                <Event
+                    :data="item"
+                    isAllEvent
+                    :title="item.title"
+                    :time="item.time"
+                    :limit="item.limit"
+                ></Event>
+            </view>
+        </scroll-view>
     </view>
 </template>
 <style lang="less" scoped>
@@ -72,6 +88,13 @@ export default defineComponent({
             height: 100%;
             width: 70%;
             // background-color: aqua;
+            box-sizing: border-box;
+            margin-right: 20rpx;
+            .home_mine_item{
+                height: 100rpx;
+                box-sizing: border-box;
+                margin-bottom: 20rpx;
+            }
         }
         .home_mine_create{
             height: 100%;
@@ -100,6 +123,14 @@ export default defineComponent({
                 margin: 0 auto;
                 text-align: center;
             }
+        }
+    }
+    .home_allEvent_list{
+        .home_allEvent_item{
+            box-sizing: border-box;
+            width: 100%;
+            height: 150rpx;
+            margin-bottom: 20rpx;
         }
     }
 }
